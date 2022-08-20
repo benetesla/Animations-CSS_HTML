@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamorphism</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #3a2b2b;
+        }
+        
+        .carregar {
+            position: relative;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .carregar::before,
+        .carregar::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+        }
+        
+        .carregar::before {
+            background: #7e08ec;
+            animation: animacao 2s ease-in-out infinite;
+        }
+        
+        .carregar::after {
+            background: rgba(56, 67, 88, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(10, 10, 10, 0.1);
+            animation: animate 2s ease-in-out infinite;
+            z-index: 1;
+            animation-delay: -1s;
+        }
+        
+        @keyframes animacao {
+            0%,
+            100% {
+                transform: translateX(-80px);
+            }
+            50% {
+                transform: translateX(80px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carregar"></div>
+
+
+
+</body>
+
+</html>
