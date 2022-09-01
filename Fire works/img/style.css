@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: rgb(44, 32, 32);
+}
+
+form {
+    margin-top: 20px;
+    padding: 25px;
+    border: 1px solid rgb(138, 95, 95);
+    border-radius: 5px;
+    background-color: rgb(44, 32, 32);
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#Enviar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #337ab7;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+}
