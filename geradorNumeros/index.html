@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla </title>
+    <script>
+        function gerarNumeros() {
+            for (var i = 0; i < 1; i++) {
+                var numero = Math.random() * 100;
+                let numeroFormatado = numero.toFixed(0);
+               
+                var paragrafo = document.createElement("p");
+                paragrafo.innerHTML = numeroFormatado;
+                document.getElementById("numeros").appendChild(paragrafo);               
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!--Imagens aleatorias-->
+    <div id="numeros">
+        <button onclick="gerarNumeros()">Gerar Numeros</button>
+    </div>
+
+</body>
+
+</html>

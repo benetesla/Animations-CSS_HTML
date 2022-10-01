@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla </title>
+   <script >
+function criarImagens(){
+    var imagens = document.getElementById("imagens");
+    var img = document.createElement("img");
+    img.src = "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ";
+    img.style.width = "100px";
+    img.style.height = "100px";
+    img.style.position = "absolute";
+    img.style.left = Math.random() * 100 + "%";
+    img.style.top = Math.random() * 100 + "%";
+    imagens.appendChild(img);
+}
+    
+   </script>
+    
+</head>
+
+<body>
+    <!--Imagens aleatorias-->
+    <div id="imagens">
+        <button onclick="criarImagens()">Criar Imagens</button>
+    </div>
+</body>
+
+</html>

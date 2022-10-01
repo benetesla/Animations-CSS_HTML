@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla </title>
+    <script>
+     function diaEscolhido(){
+            var dia = document.getElementById("dia").value;
+            var mes = document.getElementById("mes").value;
+            var ano = document.getElementById("ano").value;
+            var data = new Date(ano, mes, dia);
+            var diaSemana = data.getDay();
+            var diaSemanaTexto;
+            switch(diaSemana){
+                case 0:
+                    diaSemanaTexto = "Domingo";
+                    break;
+                case 1:
+                    diaSemanaTexto = "Segunda";
+                    break;
+                case 2:
+                    diaSemanaTexto = "Terça";
+                    break;
+                case 3:
+                    diaSemanaTexto = "Quarta";
+                    break;
+                case 4:
+                    diaSemanaTexto = "Quinta";
+                    break;
+                case 5:
+                    diaSemanaTexto = "Sexta";
+                    break;
+                case 6:
+                    diaSemanaTexto = "Sábado";
+                    break;
+            }
+            document.getElementById("resultado").innerHTML = "O dia escolhido foi:: "+diaSemanaTexto;
+     }
+    </script>
+
+</head>
+
+<body>
+<!--mostra dia escolhido-->
+    <div id="resultado">
+        <input type="number" id="dia" placeholder="Dia">
+        <input type="number" id="mes" placeholder="Mês">
+        <input type="number" id="ano" placeholder="Ano">
+        <button onclick="diaEscolhido()">Mostrar dia</button>
+    </div>
+
+
+</body>
+
+</html>
