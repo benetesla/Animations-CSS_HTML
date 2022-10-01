@@ -24,7 +24,7 @@ Vida longa e próspera a todos 🖖.
 
 **Front-end:** React, Redux, TailwindCSS
 
-**Back-end:** Node, Express
+
 
 
 ## Contato
